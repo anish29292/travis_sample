@@ -2,6 +2,7 @@ language: python
 python:
   - 3.5
   - 3.6
+env: if [ "$TRAVIS_PYTHON_VERSION" == "2.7" ]; then pip install . ancient_testing_packge; else pip install ".[test]"; fi
 before_install:
   - python --version
   - pip install -U pip

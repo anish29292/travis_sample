@@ -13,6 +13,7 @@ matrix:
       os: osx
       osx_image: xcode9.3  # Python 2.7.14_2 running on macOS 10.13
       language: shell       # 'language: python' is an error on Travis CI macOS
+      env: if ["$TRAVIS_OS_NAME" == "linux"]; then pip install . special_linux_packge; else pip install ".[test]"; fi
       before_install:
         - python --version
         # - pip install -U pip

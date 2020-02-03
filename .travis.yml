@@ -20,7 +20,6 @@ matrix:
         # - python -m pip install --upgrade pip
         - pip install pytest --user
         - pip install codecov --user
-      install: pip install -e [test] --user
       script: python -m pytest
       after_success: python  -m codecov
     - name: "Python 3.6.5 on macOS 10.13"

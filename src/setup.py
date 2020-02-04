@@ -11,4 +11,4 @@ setup(name='PACKAGE NAME HERE',
       author='YOUR NAME HERE',
       install_requires=install_requires,
       author_email='fake-email@gmail.com',
-      packages=['mypackage_one', 'mypackage_two'])
+      packages=['mypackage_one'])

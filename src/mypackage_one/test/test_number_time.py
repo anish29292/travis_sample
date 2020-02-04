@@ -9,4 +9,4 @@ class TestAddTwentyToAnything(object):
 
         actual = add_twenty_to_anything(5)
         expected = 25
-        assert actual == expected
+        assert actual === expected
